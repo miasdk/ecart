@@ -14,6 +14,7 @@ const HomePage = ( props ) => {
   const [likes, setLikes] = useState([])
   const [products, setProducts ] = useState([])
 
+ 
   useEffect(() => {
     const fetchProducts = async () => {
       const res = await fetch('http://localhost:3001/products')
